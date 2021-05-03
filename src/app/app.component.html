@@ -1,0 +1,28 @@
+
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a *ngIf="authService.loggedIn" class="navbar-brand" routerLink = "home" >Plateforme Assignment</a>
+            <a *ngIf="!authService.loggedIn"  class="navbar-brand" routerLink = "login" >Plateforme Assignment</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a  *ngIf="authService.loggedIn" (click) = "onLogout()"> se deconnecter</a></li>
+            <li><a  *ngIf="!authService.loggedIn"  routerLink = "login" > se connecter </a></li>
+          </ul>
+        </div>
+      </nav>
+      <router-outlet></router-outlet>
+       
+          <!--  <div class="container">
+              <h1>
+                <nav>
+                  <a routerLink="/home">Plateform des assignment</a>
+                </nav>
+              </h1>
+              <mat-slide-toggle color="primary" (click)="login()">Login</mat-slide-toggle>
+              <button mat-flat-button color="primary" (click)="peuplerBD()">PeuplerBD avec données de test</button>
+              </div>-->
+            <router-outlet></router-outlet>
+         
+      
+

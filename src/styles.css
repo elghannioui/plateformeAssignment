@@ -1,0 +1,18 @@
+
+html, body { height: 100%; }
+body { margin: 50; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.rendu {
+  color:green;
+  
+}
+
+.nonRendu {
+  color:red;
+  
+}
+
+.important {
+  text-decoration: underline;
+}
